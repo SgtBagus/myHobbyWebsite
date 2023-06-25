@@ -2,7 +2,7 @@
 <html lang="zxx">
 <head>
     <meta charset="utf-8">
-    <title>My Hobby - Bagus Andika - 2020175</title>
+    <title>My Portfolio - Bagus Andika</title>
     <link rel="shortcut icon" href="images/logos/favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="vendor/uikit/css/uikit.min.css">
@@ -10,6 +10,11 @@
     <link rel="stylesheet" type="text/css" href="vendor/uikit/css/components/slidenav.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/shortcodes.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
 
 <body>
@@ -23,7 +28,7 @@
                     <ul class="uk-navbar-nav uk-hidden-small" data-uk-scrollspy-nav="{closest:'li'}">
                         <li><a href="#tc-slider" data-uk-smooth-scroll="{offset: 80}">Home</a></li>
                         <li><a href="#tc-about" data-uk-smooth-scroll="{offset: 80}">About</a></li>
-                        <li><a href="#tc-work" data-uk-smooth-scroll="{offset: 80}">Hobby</a></li>
+                        <li><a href="#tc-work" data-uk-smooth-scroll="{offset: 80}">Work</a></li>
                     </ul>
                     <a href="#tc-offcanvas" class="uk-navbar-toggle uk-visible-small tc-off-toggle" data-uk-offcanvas="{mode:'slide'}"></a>
                     <div class="uk-navbar-content tc-logo uk-visible-small">
@@ -83,7 +88,7 @@
                         <p class="mt30 mb30">
                             Welcome to my portfolio! With 5 years of experience in web development, I specialize in ReactJS, CI, HTML, JavaScript, CSS, and more. I create engaging, responsive websites that exceed client expectations. Explore my portfolio to see my expertise in action. Let's bring your digital vision to life together!
                         </p>
-                        <a href="#tc-work" class="readon pill" data-uk-smooth-scroll="{offset: 80}">Check My Hobby</a>
+                        <a href="#tc-work" class="readon pill" data-uk-smooth-scroll="{offset: 80}">Check My Work</a>
                     </div>
                 </div>
             </div>
@@ -91,32 +96,22 @@
 
         <section class="tc-counter counter-style1 sec-color sec-spacer bg3">
             <div class="uk-container uk-container-center">
-                <div class="uk-grid uk-contrast" data-uk-grid-margin="">
-                    <div class="uk-width-medium-1-4 uk-width-small-1-2">
-                        <div class="counter-item">
-                            <div class="counter" data-from="0" data-to="23" data-speed="5000"
-                                data-refresh-interval="50"></div>
+                <div class="uk-contrast" data-uk-grid-margin="">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6">
+                            <div class="counter" data-from="0" data-to="23" data-speed="5000" data-refresh-interval="50"></div>
                             <h2 class="counter-title">My Age</h2>
                         </div>
-                    </div>
-                    <div class="uk-width-medium-1-4 uk-width-small-1-2">
-                        <div class="counter-item">
-                            <div class="counter" data-from="0" data-to="5" data-speed="5000"
-                                data-refresh-interval="50"></div>
-                            <h2 class="counter-title">Years For Worked</h2>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="counter" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50"></div>
+                            <h2 class="counter-title"><strong>Year's</strong> For Worked</h2>
                         </div>
-                    </div>
-                    <div class="uk-width-medium-1-4 uk-width-small-1-2">
-                        <div class="counter-item">
-                            <div class="counter" data-from="0" data-to="65" data-speed="5000"
-                                data-refresh-interval="50"></div>
-                            <h2 class="counter-title">Project Done</h2>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="counter" data-from="0" data-to="65" data-speed="5000" data-refresh-interval="50"></div>
+                            <h2 class="counter-title"><strong>Project Done</strong></h2>
                         </div>
-                    </div>
-                    <div class="uk-width-medium-1-4 uk-width-small-1-2">
-                        <div class="counter-item">
-                            <div class="counter" data-from="0" data-to="8533" data-speed="5000"
-                                data-refresh-interval="50"></div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="counter" data-from="0" data-to="8533" data-speed="5000" data-refresh-interval="50"></div>
                             <h2 class="counter-title">Hours For Hobbies</h2>
                         </div>
                     </div>
@@ -128,116 +123,132 @@
         <section class="tc-works portfolio-style1 sec-color sec-spacer" id="tc-work">
             <div class="uk-container uk-container-center">
                 <h1 class="title1 title-center uk-margin-top-remove mb60">My Work</h1>
-                <div data-uk-grid="{gutter: 25}" class="uk-grid-width-medium-1-3 uk-grid-width-small-1-2">
-                    <div>
+                <div class="row">
+                    <div class="col-md-4 p-1">
                         <div class="p-item">
-                            <img src="images/portfolio/1.jpg" alt="Portfolio Image">
+                            <img class="img-portfolio" src="images/portfolio/1.jpg" alt="Portfolio Image">
                             <div class="p-desc-holder">
                                 <div class="p-top">
                                     <h3 class="p-title"><a href="#">WORKING WITH REACT JS</a></h3>
                                 </div>
-                                <div class="p-middle">
-                                    <a class="p-zoom uk-icon-search" href="images/portfolio/1.jpg"
-                                        data-lightbox-type="image" data-uk-lightbox="{group:'pfolio'}"
-                                        title="WORKING WITH REACT JS"></a>
+                                <div class="p-bottom">
+                                    <span>
+                                        <ui> Working with React Js Including
+                                            <li>Frontend Developer</li>
+                                            <li>Making a Functional Components</li>
+                                            <li>Familiar working with JSON RestAPI</li>
+                                        </ui>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="col-md-4 p-1">
                         <div class="p-item">
-                            <img src="images/portfolio/2.jpg" alt="Portfolio Image">
+                            <img class="img-portfolio" src="images/portfolio/2.jpg" alt="Portfolio Image">
                             <div class="p-desc-holder">
                                 <div class="p-top">
                                     <h3 class="p-title"><a href="#">FAMILIAR WITH NODE MODULE</a></h3>
                                 </div>
-                                <div class="p-middle">
-                                    <a class="p-zoom uk-icon-search" href="images/portfolio/2.jpg"
-                                        data-lightbox-type="image" data-uk-lightbox="{group:'pfolio'}"
-                                        title="WATCH ANIMATION"></a>
-                                </div>
                                 <div class="p-bottom">
-                                    <span class="p-likes"><i class="uk-icon-heart"></i> 75 Likes</span>
-                                    <span class="p-views"><i class="uk-icon-eye"></i> 100 Views</span>
+                                    <span>
+                                        <ui> Familiar With Node Module
+                                            <li>Use a Library for making a better Functional Components</li>
+                                            <li>Update a current lib for a better performance</li>
+                                            <li>Make a global components and can be use for all team</li>
+                                        </ui>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="col-md-4 p-1">
                         <div class="p-item">
-                            <img src="images/portfolio/3.jpg" alt="Portfolio Image">
+                            <img class="img-portfolio" src="images/portfolio/3.jpg" alt="Portfolio Image">
                             <div class="p-desc-holder">
                                 <div class="p-top">
-                                    <h3 class="p-title"><a href="#">FAMILIAR WITH CSS</a></h3>
-                                </div>
-                                <div class="p-middle">
-                                    <a class="p-zoom uk-icon-search" href="images/portfolio/3.jpg"
-                                        data-lightbox-type="image" data-uk-lightbox="{group:'pfolio'}"
-                                        title="RESEARCH SOME NEW TECS"></a>
+                                    <h3 class="p-title"><a href="#">CAN WORK WITH CSS</a></h3>
                                 </div>
                                 <div class="p-bottom">
-                                    <span class="p-likes"><i class="uk-icon-heart"></i> 18 Likes</span>
-                                    <span class="p-views"><i class="uk-icon-eye"></i> 72 Views</span>
+                                    <span>
+                                        <ui> Including
+                                            <li>Familiar with Less</li>
+                                            <li>Familiar with Bootstrap</li>
+                                            <li>Convert figma design to a working Website including UI/UX</li>
+                                        </ui>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="p-item">
-                            <img src="images/portfolio/4.jpg" alt="Portfolio Image">
-                            <div class="p-desc-holder">
-                                <div class="p-top">
-                                    <h3 class="p-title">
-                                        <a href="https://dashboard.majoo.id" target="_blank">
+                    <div class="col-md-4 p-1">
+                        <a href="https://dashboard.majoo.id" target="_blank">
+                            <div class="p-item">
+                                <img class="img-portfolio" src="images/portfolio/4.jpg" alt="Portfolio Image">
+                                <div class="p-desc-holder">
+                                    <div class="p-top">
+                                        <h3 class="p-title">
                                             <b> 2 Years </b>Maintenance Client Dashboard at PT Majoo Teknologi Indonesia
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="p-middle">
-                                    <a class="p-zoom uk-icon-search" href="images/portfolio/4.jpg"
-                                        data-lightbox-type="image" data-uk-lightbox="{group:'pfolio'}"
-                                        title="2 Years Maintenance Client Dashboard at PT Majoo Teknologi Indonesia"></a>
+                                        </h3>
+                                    </div>
+                                    <div class="p-bottom">
+                                        <span>
+                                            <ui> <b>2 Years</b> Maintenance Client Dashboard
+                                                <li>Help Create a new Feature</li>
+                                                <li>Maintenace bug and make a better performance</li>
+                                                <li>Create a Unit Testing for a new components</li>
+                                            </ui>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div>
-                        <div class="p-item">
-                            <img src="images/portfolio/5.jpg" alt="Portfolio Image">
-                            <div class="p-desc-holder">
-                                <div class="p-top">
-                                    <h3 class="p-title">
-                                        <a href="#">
+                    <div class="col-md-4 p-1">
+                        <a href="#" target="_blank">
+                            <div class="p-item">
+                                <img class="img-portfolio" src="images/portfolio/5.jpg" alt="Portfolio Image">
+                                <div class="p-desc-holder">
+                                    <div class="p-top">
+                                        <h3 class="p-title">
                                             <b> 4 Years </b>Maintenance Internal Dashboard at PT Majoo Teknologi Indonesia
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="p-middle">
-                                    <a class="p-zoom uk-icon-search" href="images/portfolio/5.jpg"
-                                        data-lightbox-type="image" data-uk-lightbox="{group:'pfolio'}"
-                                        title="4 Years Maintenance Internal Dashboard at PT Majoo Teknologi Indonesia"></a>
+                                        </h3>
+                                    </div>
+                                    <div class="p-bottom">
+                                        <span>
+                                            <ui> <b>4 Years</b> Maintenance Internal Dashboard
+                                                <li>Create a new Feature</li>
+                                                <li>Maintenace bug and make a better performance</li>
+                                                <li>Join as Fast Operasion Team</li>
+                                            </ui>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                    <div>
-                        <div class="p-item">
-                            <img src="images/portfolio/6.jpg" alt="Portfolio Image">
-                            <div class="p-desc-holder">
-                                <div class="p-top">
-                                    <h3 class="p-title">
-                                        <a href="https://majoo.id/" target="_blank">
+                    <div class="col-md-4 p-1">
+                        <a href="https://majoo.id/" target="_blank">
+                            <div class="p-item">
+                                <img class="img-portfolio" src="images/portfolio/6.jpg" alt="Portfolio Image">
+                                <div class="p-desc-holder">
+                                    <div class="p-top">
+                                        <h3 class="p-title">
                                             <b> 8 Months </b>Maintenance Portal Website at PT Majoo Teknologi Indonesia
-                                        </a>
-                                    </h3>
-                                </div>
-                                <div class="p-middle">
-                                    <a class="p-zoom uk-icon-search" href="images/portfolio/6.jpg"
-                                        data-lightbox-type="image" data-uk-lightbox="{group:'pfolio'}"
-                                        title="8 Months Maintenance Portal Website at PT Majoo Teknologi Indonesia"></a>
+                                        </h3>
+                                    </div>
+                                    <div class="p-bottom">
+                                        <span>
+                                            <ui> <b>8 Months</b> Portal Website
+                                                <li>Working with Codeigniter</li>
+                                                <li>Working with Less</li>
+                                                <li>Create a Functional Portal Menu</li>
+                                            </ui>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -251,7 +262,7 @@
             <ul class="uk-nav uk-nav-offcanvas" data-uk-scrollspy-nav="{closest:'li'}">
                 <li><a href="#tc-slider" data-uk-smooth-scroll="">Home</a></li>
                 <li><a href="#tc-about" data-uk-smooth-scroll="{offset: 80}">About</a></li>
-                <li><a href="#tc-work" data-uk-smooth-scroll="{offset: 80}">Hobby</a></li>
+                <li><a href="#tc-work" data-uk-smooth-scroll="{offset: 80}">Work</a></li>
             </ul>
         </div>
     </div>
