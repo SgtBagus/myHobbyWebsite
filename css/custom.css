@@ -1,13 +1,23 @@
 .p-item {
     height: 100% !important;
+    margin: 10px;
 }
 
 .img-portfolio {
     width: 100%;
     height: 15vw;
     object-fit: cover;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
+.p-desc-holder {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 
 a {
     text-decoration: none !important; 
@@ -15,4 +25,14 @@ a {
 
 .p-bottom {
     top: -80px !important;
+}
+
+.open-porject-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.open-porject-link {
+    color: #0d6efd;
 }
