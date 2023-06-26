@@ -49,3 +49,7 @@ a {
 .open-porject-link {
     color: #0d6efd;
 }
+
+.profile-img {
+    border-radius: 25px;
+}
