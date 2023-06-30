@@ -53,3 +53,21 @@ a {
 .profile-img {
     border-radius: 25px;
 }
+
+.custom-timeline {
+    border-radius: 25px;
+}
+
+.card-img-top {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card-img-top {
+    object-fit: none;
+}
+
+.img-portfolio {
+    object-fit: contain;
+    background-color: aquamarine;
+}
